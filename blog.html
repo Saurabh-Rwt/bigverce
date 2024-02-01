@@ -1,0 +1,551 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Halda - eSports Gaming HTML5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Ajax CDN link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".read-more").click(function () {
+                $("#hide-content").toggle();
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function readMore() {
+            if (document.getElementById("show").parentElement.children[2]) {
+                document.getElementById("show").parentElement.children[2].remove()
+            }
+
+            document.getElementById("hidden").hidden = false
+            document.getElementById("show").hidden = true
+        }
+        function readLess() {
+            if (document.getElementById("hidden").parentElement.children[2]) {
+                document.getElementById("hidden").parentElement.children[2].remove()
+            }
+
+            document.getElementById("show").hidden = false
+            document.getElementById("hidden").hidden = true
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loading-center">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header>
+        <div id="header-top-fixed"></div>
+        <div id="sticky-header" class="menu-area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav show">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html">Bigverce</a>
+                                        </li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="our-services.html">Our Services</a></li>
+                                        <li><a href="product.html">products</a></li>
+                                        <li class="active"><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">contact us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-action">
+                                    <ul>
+
+                                        <li class="header-sine">
+                                            <a href="login.html"><i class="far fa-edit"></i>log-in</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Mobile Menu  -->
+                        <div class="mobile-menu">
+                            <nav class="menu-box">
+                                <div class="close-btn"><i class="fas fa-times"></i></div>
+                                <div class="nav-logo"><a href="index.html"><img src="assets/img/logo/logo.png" alt=""
+                                            title=""></a>
+                                </div>
+                                <div class="menu-outer">
+                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                </div>
+                                <div class="social-links">
+                                    <ul class="clearfix">
+                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-backdrop"></div>
+                        <!-- End Mobile Menu -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-icon">
+                <a href="#" class="menu-tigger"><img src="assets/img/icon/hader_icon.png" alt=""></a>
+            </div>
+        </div>
+        <!-- header-search -->
+        <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="search-close">
+                <span><i class="fas fa-times"></i></span>
+            </div>
+            <div class="search-wrap text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title">... Search Here ...</h2>
+                            <div class="search-form">
+                                <form action="#">
+                                    <input type="text" name="search" placeholder="Type keywords here">
+                                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-menu -->
+        <div class="extra-info">
+            <div class="close-icon menu-close">
+                <button><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="logo-side mb-30">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+            </div>
+            <div class="side-info mb-30">
+                <div class="contact-list mb-30">
+                    <h4>Office Address</h4>
+                    <p>123/A, Miranda City Likaoli <br> Prikano, Dope</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Phone Number</h4>
+                    <p>+0989 7876 9865 9</p>
+                    <p>+(090) 8765 86543 85</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Email Address</h4>
+                    <p>info@example.com</p>
+                    <p>example.mail@hum.com</p>
+                </div>
+            </div>
+            <ul class="side-instagram">
+                <li><a href="our-squad.html"><img src="assets/img/images/sd_insta01.jpg" alt=""></a></li>
+                <li><a href="our-squad.html"><img src="assets/img/images/sd_insta02.jpg" alt=""></a></li>
+                <li><a href="our-squad.html"><img src="assets/img/images/sd_insta03.jpg" alt=""></a></li>
+                <li><a href="our-squad.html"><img src="assets/img/images/sd_insta04.jpg" alt=""></a></li>
+                <li><a href="our-squad.html"><img src="assets/img/images/sd_insta05.jpg" alt=""></a></li>
+                <li><a href="our-squad.html"><img src="assets/img/images/sd_insta06.jpg" alt=""></a></li>
+            </ul>
+            <div class="social-icon-right mt-30">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="offcanvas-overly"></div>
+        <!-- offCanvas-menu-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+    <!-- main-area -->
+    <main>
+
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area breadcrumb-bg breadcrumb-bg-two">
+            <div class="breadcrumb-overflow">
+                <div class="container">
+                    <div class="breadcrumb-inner">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="breadcrumb-content">
+                                    <h2 class="title">blogs</h2>
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Bigverce latest blog
+                                            </li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <div class="breadcrumb-img-two">
+                                    <img src="assets/img/image/blog.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="breadcrumb-shape shape-1 wow slideInLeft" data-wow-delay=".2s" data-wow-duration="2.5s"><img
+                        src="assets/img/bg/breadcrumb_shape01.png" alt=""></div>
+                <div class="breadcrumb-shape shape-2 wow slideInRight" data-wow-delay=".2s" data-wow-duration="2.5s">
+                    <img src="assets/img/bg/breadcrumb_shape02.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+
+        <!-- blog-area -->
+        <section class="blog-area black-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="blog-item mb-60">
+                            <div class="blog-thumb mb-50">
+                                <a href="blog-details.html"><img src="assets/img/blog/BLOG-1.jpg" alt=""></a>
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="title">What Is an NFT? How Do NFTs Work?</h2>
+                                <p>Non-fungible tokens (NFTs) are exploding in popularity these days, some of the NFTs
+                                    are sold for millions of dollars.</p>
+                                <h5>Do you think NFTs are worth this much money in real or it’s just hype?</h5>
+                                <p>Some say it’s a bubble, Some believe NFTs are here to stay, and investing in digital
+                                    assets will change forever.</p>
+                                <h5>What is NFT?</h5>
+                                <p>NFT is NON-fungible Tokens NFTs are the digital representations of art and
+                                    collectibles. “Non-fungible” means that it’s unique and can’t be replaced with
+                                    something else.</p>
+                                <div id="hide-content" style="display:none;">
+                                    <h5>An NFT (non-fungible token) is data added to a file that creates a unique
+                                        signature.</h5>
+                                    <p>It can be an image file, a song, a text on a website, a tweet, a song, a video, a
+                                        website domain or a physical item, or anything that can be converted into a
+                                        digital format. Owning an NFT means owning a digital file marked with code to
+                                        differentiate it from any digital file. NFTs bring ownership of digital items.
+                                        NFTs are digital items stored on the blockchain and their value is derived by
+                                        the people on what they are willing to pay to own the NFT. NFTs can also be used
+                                        for the ownership rights of the property.
+                                        But there has been an image file, a song, a video, etc. that already exists in
+                                        some digital form elsewhere, or on the web, so what is the point of buying or
+                                        owning an NFT?
+
+                                        The NFTs become more complicated to understand when we come to know that anyone
+                                        can view these digital images that are now converted to NFTs, not an NFT but the
+                                        entire collection can be viewed and not only you can view the collection you can
+                                        also download the same, so why people are still willing to buy them?
+
+                                        You must know the answer too, It’s because an NFT allows the buyer to own the
+                                        original item, not only the original owner is the reason, but the information or
+                                        data that the NFT contains as a built-in authentication, which is the proof of
+                                        ownership based on blockchain technology.
+                                    </p>
+                                    <h5>How do NFTs work?</h5>
+                                    <p>Most NFTs are part of the Ethereum blockchain, though there are other blockchains
+                                        also that have implemented NFTs, But Ethereum keeps its lead and is the most
+                                        used blockchain to create and trade NFTs.
+                                        While creating an NFT or say converting the digital asset to NFT, unique data is
+                                        added to that digital work and stored in the blockchain.
+
+                                        Once the digital art is covered into NFT it is now tradable. The creator of the
+                                        NFT can place the selling price or ask the buyers to bid the price and sell it
+                                        to the buyer. This transaction is done through cryptocurrency or the native
+                                        crypto token of the blockchain that is used in creating the NFT, also the
+                                        creator can have a % as royalty for every time the NFT is traded.
+
+                                        NFTs that are available in the open market may or may not have any specific use
+                                        case but most of them are used as club memberships, or game avatars and
+                                        collectibles.
+
+                                        The blockchain network that is used to create the NFT stores the information of
+                                        royalties, buy, sell and transfer of NFT along with the ownership of the NFT. An
+                                        NFT is created, or “minted” from digital objects both tangible and intangible
+                                        items, including:
+                                    </p>
+                                    <ul class="product-desc-list mx-4">
+                                        <li>Art</li>
+                                        <li>GIFs</li>
+                                        <li>Videos</li>
+                                        <li>Collectibles</li>
+                                        <li>Virtual avatars</li>
+                                        <li>Accessories</li>
+                                        <li>Music</li>
+                                        <li>Domain Names</li>
+                                        <li>Land</li>
+                                        <li>Music</li>
+                                    </ul>
+                                    <p>Know more about NFT and NFT related topics subscribe to our newsletter or write
+                                        to us <a href="mailto:info@bigverce.com">info@bigverce.com</a></p>
+                                </div>
+                                <button class="btn read-more" id="show" onclick="readMore()">Read more</button>
+                                <button class="btn read-more" id="hidden" onclick="readLess()" hidden>Read Less</button>
+                            </div>
+                            <div class="blog-thumb mb-50 mt-5">
+                                <a href="blog-details.html"><img src="assets/img/blog/BLOG-2.jpg" alt=""></a>
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="title">What is NFT staking? How does it work?</h2>
+                                <p style="text-align:justify;">NFT staking is a new concept in the cryptocurrency world
+                                    many NFT holders are looking forward to NFT staking platforms, the reason is that
+                                    non-fungible token is unique, and it’s totally different from the crypto-assets and
+                                    this unique ownership feature is making more holders than sellers or traders. This
+                                    is the big difference between cryptocurrencies and NFTs and that’s the reason the
+                                    NFT staking platforms are the next big development that NFT holders are looking
+                                    forward to.</p>
+
+                                <div style="display:none;">
+                                    <p>The NFT market is very new and expanding, if you are an artist, developer,
+                                        collector. or NFT trader everyone is makingcontinuous efforts to find out new
+                                        ways of growing in the NFT market, Because at the moment you talk about NFTs
+                                        people arealways thinking of them as digital art and collectables. and to some
+                                        extent, it is true for the majority of NFT projects.but it is not going to be
+                                        the same it is just the beginning, to add more use cases and utility in the NFT
+                                        market theupcoming use case is “NFT Staking” which is locking up the NFT or NFT
+                                        collection and earning rewards from the stakingplatform.
+                                    </p>
+                                    <h5>What Is NFT Staking?</h5>
+                                    <P>NFT staking is locking up your NFTs on a platform, protocol or in exchange for staking rewards or any other benefits that include NFT airdrops. Staking NFTs is like keeping the ownership of the NFT while at the same time earning rewards by locking them on smart contracts instead of just holding them in your wallet.
+                                    </P>
+                                    <h5>How does NFT Staking work?</h5>
+                                    <p>NFT staking works using the same system as the crypto tokens. NFTs are tokenized assets. Users can lock up their NFTs on specific platforms and receive rewards based on the APY(annual percentage yield ) and the number of NFTs staked. Also, remember that like cryptocurrencies, you cannot stake every NFT, NFT staking is based on NFT projects and offerings of rewards by the NFT platform itself  Different projects have different requirements, one must check the project staking offerings before and then either mint the NFTs or buy it from the secondary market and stake them for rewards. 
+                                    </p>
+                                    <h5>What are NFT Staking Rewards?</h5>
+                                    <p>NFT holders can get rewards for staking a single NFT or NFT collection, The staking rewards depend on the platform used to stake the NFTs and also depends on the type of NFT staked as the rewards are different for the same NFT collection as per the rarity of the NFT.
+
+                                        The platforms which allow users to stake NFTs can use different reward distribution modules which can be daily or weekly or monthly rewards. To claim these rewards the platform can again use the claim till the NFT  is staked or claim when the NFT is un-staked. 
+                                        
+                                        The staking rewards are usually issued in the form of the platform’s native utility token, or NFT platforms utility token that is listed or going to be listed on exchanges and can be traded for other cryptocurrencies. 
+                                        
+                                        You can also stake your NFT to participate in the platform’s governance and vote on future proposals. Staking opportunities are mostly available on play-to-earn gaming platforms. 
+                                        
+                                        Whether you want to stake, hold, or flip NFTs, Bigverce is all you need, Our NFT project collaborations make it easy for you to mint, buy, sell or stake NFTs and earn rewards.  
+                                        
+                                        Know more about NFT and NFT related topics subscribe to our newsletter or write to us info@bigverce.com 
+                                        </p>
+                                </div>
+                                <div class="blog-content-bottom">
+                                    <a href="blog-details.html" class="btn">Read more</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <aside class="blog-sidebar">
+
+                            <div class="blog-widget">
+                                <h4 class="widget-title">services </h4>
+                                <div class="blog-categories">
+                                    <ul>
+                                        <li>
+                                            <a href="our-services.html#market_making_services">
+                                                Market-Making Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="our-services.html#market_making_services">
+                                                Advisory Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="our-services.html#market_making_services">
+                                                Token economics services
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="blog-widget">
+                                <h4 class="widget-title">Recent Post</h4>
+                                <div class="rc-post-list">
+                                    <ul>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="blog-details.html"><img src="assets/img/blog/BLOG-1.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h5 class="title"><a href="#">What is an NFT?</a></h5>
+                                                <!-- <span class="date"><i class="far fa-clock"></i>march 10, 2022</span> -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="blog-widget">
+                                <h4 class="widget-title">Newsletter</h4>
+                                <div class="sidebar-newsletter text-center">
+                                    <div class="sn-thumb mb-30">
+                                        <img src="assets/img/blog/newsletter_img.png" alt="">
+                                    </div>
+                                    <div class="sn-content">
+                                        <p>A newsletter is an email you can send to customers!</p>
+                                        <form action="#">
+                                            <input type="text" placeholder="Enter email">
+                                            <button>Subscribe Now</button>
+                                        </form>
+                                        <p class="last-text">Don’t worry, we don’t spam</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-widget">
+                                <h4 class="widget-title">Social media links </h4>
+                                <ul class="shop-sidebar-tags">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- footer-area -->
+    <footer>
+        <div class="footer-top-wrap">
+            <div class="container">
+                <div class="footer-menu-wrap">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="f-logo">
+                                <a href="index-2.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="footer-menu">
+                                <nav>
+                                    <ul class="navigation">
+                                        <li><a href="index.html">BIGVERCE</a></li>
+                                        <li><a href="about-us.html">ABOUT US</a></li>
+                                        <li><a href="our-services.html">OUR SERVICES</a></li>
+                                        <li><a href="product.html">PRODUCTS</a></li>
+                                        <li><a href="blog.html">BLOG</a></li>
+                                        <li><a href="contact.html">CONTACT</a></li>
+                                    </ul>
+                                    <div class="footer-search">
+                                        <form action="#">
+                                            <input type="text" placeholder="Subscribe our Newsletter ">
+                                            <button><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-quick-link-wrap">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-8">
+                            <div class="quick-link-list">
+                                <ul>
+                                    <li><a href="contact.html">FAQ</a></li>
+                                    <li><a href="contact.html">Help Center</a></li>
+                                    <li><a href="contact.html">Terms of Use</a></li>
+                                    <li><a href="contact.html">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4">
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="assets/js/jquery.knob.min.js"></script>
+    <script src="assets/js/jquery-countdowngampang.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
