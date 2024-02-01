@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Halda - eSports Gaming HTML5 Template</title>
+    <title>Bigverce - NFT project, NFT creator, NFT collector or NFT trader.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -132,9 +133,9 @@
                     </div>
                 </div>
             </div>
-            <div class="header-icon">
+            <!-- <div class="header-icon">
                 <a href="#" class="menu-tigger"><img src="assets/img/icon/hader_icon.png" alt=""></a>
-            </div>
+            </div> -->
         </div>
         <!-- header-search -->
         <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
@@ -160,7 +161,7 @@
         <!-- header-search-end -->
 
         <!-- offCanvas-menu -->
-        <div class="extra-info">
+        <!-- <div class="extra-info">
             <div class="close-icon menu-close">
                 <button><i class="far fa-window-close"></i></button>
             </div>
@@ -198,7 +199,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <div class="offcanvas-overly"></div>
+        <div class="offcanvas-overly"></div> -->
         <!-- offCanvas-menu-end -->
 
     </header>
@@ -247,34 +248,91 @@
             <div class="container">
                 <div class="row justify-content-center">
 
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 mt-4">
                         <div class="row justify-content-center">
                             <div class="contact-wrap">
                                 <div class="contact-title">
-                                    <h2 class="title">Regiter Here</h2>
-
+                                    <h2 class="title">Register Here</h2>
+                            
                                 </div>
-                                <form action="#" class="contact-form">
+                                <div class="contact-form">
                                     <div class="form-grp">
-                                        <label for="name">Your Name <span>*</span></label>
-                                        <input type="text" id="name" placeholder="Full Name">
+                                        <span id="ContentPlaceHolder1_lblerror" style="color:Red;"></span>
                                     </div>
                                     <div class="form-grp">
-                                        <label for="name">Your email <span>*</span></label>
-                                        <input type="text" id="name" placeholder="saurabh@example.com">
+                                        <label for="name">Introducer ID<span>*</span></label>
+                                        <div id="ContentPlaceHolder1_UpdatePanel4">
+                            
+                                            <input name="ctl00$ContentPlaceHolder1$txtSponsorID" type="text" maxlength="12"
+                                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$txtSponsorID\',\'\')', 0)"
+                                                onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return onlynCharNumeric(event)"
+                                                id="ContentPlaceHolder1_txtSponsorID" placeholder="Introducer ID">
+                            
+                                        </div>
+                                        <div id="ContentPlaceHolder1_UpdatePanel1">
+                            
+                                            <span id="ContentPlaceHolder1_lblSponsorName"></span>
+                            
+                                        </div>
                                     </div>
                                     <div class="form-grp">
-                                        <label for="password">Password <span>*</span></label>
-                                        <input type="password" id="password" placeholder="password">
                                     </div>
-
-                                    <button type="submit" class="btn">Register</button>
-                                </form>
+                                    <div class="form-grp">
+                                        <label for="name">First Name <span>*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtFirstName" type="text" maxlength="60"
+                                            id="ContentPlaceHolder1_txtFirstName" placeholder="First Name">
+                            
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="name">Last Name <span>*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtLastName" type="text" maxlength="60"
+                                            id="ContentPlaceHolder1_txtLastName" placeholder="Last Name">
+                            
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="name">Email ID <span>*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtEmailID" type="text" maxlength="100"
+                                            id="ContentPlaceHolder1_txtEmailID" placeholder="Login ID">
+                            
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="name">Mobile Number<span>*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtMobNumber" type="text" maxlength="10"
+                                            id="ContentPlaceHolder1_txtMobNumber" placeholder="Mobile Number">
+                            
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="email">Password <span>*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtpwd" type="password" maxlength="30"
+                                            id="ContentPlaceHolder1_txtpwd" placeholder="Password">
+                            
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="email">Confirm Password <span>*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$txtcpwd" type="password" maxlength="30"
+                                            id="ContentPlaceHolder1_txtcpwd" placeholder="Confirm Password">
+                            
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Remember me
+                            
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnlogin" value="Register Now"
+                                        id="ContentPlaceHolder1_btnlogin" class="btn">
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 mt-4">
                         <div class="contact-wrap">
                             <div class="contact-title">
                                 <h2 class="title">Log In Here</h2>
@@ -369,7 +427,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3">
                             <div class="f-logo">
-                                <a href="index-2.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-lg-9">
@@ -383,12 +441,12 @@
                                         <li><a href="blog.html">BLOG</a></li>
                                         <li><a href="contact.html">CONTACT</a></li>
                                     </ul>
-                                    <div class="footer-search">
+                                    <!-- <div class="footer-search">
                                         <form action="#">
                                             <input type="text" placeholder="Subscribe our Newsletter ">
                                             <button><i class="fas fa-search"></i></button>
                                         </form>
-                                    </div>
+                                    </div> -->
                                 </nav>
                             </div>
                         </div>
@@ -399,20 +457,21 @@
                         <div class="col-lg-7 col-md-8">
                             <div class="quick-link-list">
                                 <ul>
-                                    <li><a href="contact.html">FAQ</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="contact.html">Help Center</a></li>
-                                    <li><a href="contact.html">Terms of Use</a></li>
-                                    <li><a href="contact.html">Privacy</a></li>
+                                    <li><a href="terms-and-condition.html">Terms And Condition</a></li>
+                                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-4">
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Big-Verce-100880599328859/"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/BigVerce?t=tOx64P-vBDfUGCtLLUhAyw&s=09"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://youtube.com/channel/UCWs5w5bgStHvAg7HtFbl_rQ"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://instagram.com/bigverce?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -422,11 +481,6 @@
         </div>
     </footer>
     <!-- footer-area-end -->
-
-
-
-
-
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>

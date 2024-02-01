@@ -3814,7 +3814,7 @@ label {
     border: none;
     padding: 0 0;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
     color: #fff;
@@ -3822,6 +3822,25 @@ label {
 .shop-description-wrap .nav-tabs .nav-link.active {
     color: #ff8503;
 }
+
+.blog-categories .nav-tabs .nav-link {
+    background: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 16px 15px 18px 15px;
+}
+.blog-categories .nav-tabs .nav-link.active {
+    color: #ff8503;
+}
+
 .shop-description-wrap .tab-content .tab-pane {
     border: 1px solid #232323;
     background: #171717;
